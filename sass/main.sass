@@ -3,20 +3,58 @@ html, body
     margin: 0
     padding: 0
     box-sizing: border-box
+    background-color: #D1CBC6
+    
+
 
 .bg-img
-    width: 100vw
+    width: 99vw
     height: 100vh
     background: url('../img/bg.jpg')
     background-size: cover
     z-index: -1
 
 header
-    width: 100vw
-    height: 13.8%
-    background-color: white
+    width: 100%
     display: grid
-    grid-template-rows: 5% 8.7%
-    .navbar
-        display: flex
+    grid-template-columns: 130px repeat(5, 1fr) 130px
+    grid-template-rows: 5.3vh 9.4vh
+    grid-gap: 3px
 
+    .navbar-item, .rect, .block-1, .block-0
+        background-color: white
+        display: flex
+        align-items: center
+
+
+    .block-0
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 1
+        grid-row-end: 3
+
+    .block-1
+        grid-column-start: 7
+        grid-column-end: 8
+        grid-row-start: 1
+        grid-row-end: 3
+
+
+.container
+    width: 85.15vw
+    display: flex
+    margin: auto
+    height: 1932px
+    background-color: white
+    // position: absolute
+    // top: 674px
+    // left: 50%
+    // transform: translate(-50%)
+
+footer 
+    background-color: black
+    color: white
+    width: 100%
+    display: grid
+    grid-template-columns: 130px repeat(5, 1fr) 130px
+    grid-template-rows: 5.3vh 9.4vh
