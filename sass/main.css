@@ -36,7 +36,7 @@ header .navbar-item, header .rect, header .block-1, header .block-0 {
           align-items: center;
 }
 
-header .block-0 {
+.block-0 {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 2;
@@ -45,7 +45,7 @@ header .block-0 {
   grid-row-end: 3;
 }
 
-header .block-1 {
+.block-1 {
   -ms-grid-column: 7;
       grid-column-start: 7;
   grid-column-end: 8;
