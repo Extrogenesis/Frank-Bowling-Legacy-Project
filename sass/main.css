@@ -83,6 +83,9 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.social-media i {
   color: white;
 }
 /*# sourceMappingURL=main.css.map */
