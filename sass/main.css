@@ -75,4 +75,14 @@ footer {
   -ms-grid-rows: 5.3vh 9.4vh;
       grid-template-rows: 5.3vh 9.4vh;
 }
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */
