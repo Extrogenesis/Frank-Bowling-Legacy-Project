@@ -7,7 +7,7 @@ html, body {
   background-color: #D1CBC6;
 }
 
-.bg-img {
+.main-viewport {
   width: 99vw;
   height: 100vh;
   background: url("../img/bg.jpg");
