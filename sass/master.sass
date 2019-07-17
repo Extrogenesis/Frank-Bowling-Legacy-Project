@@ -1,4 +1,50 @@
-html
+html,body
+    width: 100%
     margin: 0
     padding: 0
     box-sizing: border-box
+
+.wrapper
+    height: 100vh
+    width: calc(100vw - 17px)
+    background-image: url('../img/bg.png')
+    background-position: center 30%
+header
+    width: 100%
+    background-color: grey
+    display: flex
+    justify-content: center
+    border-bottom: 20px solid gray
+    nav
+        display: grid
+        grid-template-columns: 6.805% 3fr 1fr 1fr 6.805%
+        grid-template-rows: 47px 47px
+        grid-gap: 3px
+        width: 100%
+        // width: 86.39%
+        .brand
+            grid-column-start: 2
+            grid-column-end: 3
+            grid-row-start: 1
+            grid-row-end: 4
+        .block, .brand, .nav-item
+            background-color: pink
+        .exhibitions
+            grid-column-start: 3
+            grid-column-end: 4
+        .work
+            grid-column-start: 4
+            grid-column-end: 5
+        .about
+            grid-column-start: 4
+            grid-column-end: 5
+            grid-row-start: 2
+            grid-row-end: 4
+        .contact
+            grid-column-start: 3
+            grid-column-end: 4
+            grid-row-start: 2
+            grid-row-end: 4
+        .block
+            grid-row-start: 1
+            grid-row-end: 4
