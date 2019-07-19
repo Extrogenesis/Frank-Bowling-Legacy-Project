@@ -13,8 +13,8 @@ header {
 header nav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 6.805% 3fr 1fr 1fr 6.805%;
-      grid-template-columns: 6.805% 3fr 1fr 1fr 6.805%;
+  -ms-grid-columns: 7% 3fr 1fr 1fr 7%;
+      grid-template-columns: 7% 3fr 1fr 1fr 7%;
   -ms-grid-rows: 47px 47px;
       grid-template-rows: 47px 47px;
   grid-gap: 3px;
@@ -80,6 +80,7 @@ html, body {
 
 .wrapper {
   height: 100vh;
+  max-height: 1465px;
   width: calc(100vw - 17px);
   background-image: url("../img/bg.png");
   background-position: center 30%;
@@ -101,9 +102,10 @@ html, body {
 }
 
 .body-background .container {
-  width: 86.31%;
+  width: 86%;
   display: -ms-grid;
   display: grid;
+  background-color: grey;
   -ms-grid-columns: ()[5fr];
       grid-template-columns: repeat(5fr);
   -ms-grid-rows: 1fr 1fr;
