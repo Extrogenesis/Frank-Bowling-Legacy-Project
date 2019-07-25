@@ -1,32 +1,21 @@
 @import 'layout/header'
     
     
-html,body
-    width: 100%
+html,
+body
+    width: calc(100%)
     margin: 0
     padding: 0
     box-sizing: border-box
-
-.wrapper
-    height: 100vh
-    max-height: 1465px
-    width: 100%
-    background-image: url('../img/bg.png')
-    background-position: center 30%
 
 .book-now
     text-align: center
     border: 2px solid grey
     
-.body-background
+footer
     width: 100%
-    display: flex
+    display: grid
     justify-content: center
-    .container
-        width: 86%
-        display: grid
-        background-color: grey
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr
-        grid-template-rows: 1fr 1fr
-        .big-block
-
+    background-color: grey
+    grid-template-columns: 7% repeat(5, 1fr) 7%
+    grid-template-rows: 47px 47px
