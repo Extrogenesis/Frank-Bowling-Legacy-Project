@@ -1,3 +1,11 @@
+.wrapper {
+  height: 100vh;
+  max-height: 1936px;
+  width: 100%;
+  background-image: url("../img/bg.png");
+  background-position: center 30%;
+}
+
 header {
   width: 100%;
   background-color: grey;
@@ -7,7 +15,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: 20px solid gray;
+  border-bottom: 15px solid gray;
 }
 
 header nav {
@@ -70,20 +78,13 @@ header nav .block {
   grid-row-end: 4;
 }
 
-html, body {
-  width: 100%;
+html,
+body {
+  width: calc(100%);
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.wrapper {
-  height: 100vh;
-  max-height: 1465px;
-  width: 100%;
-  background-image: url("../img/bg.png");
-  background-position: center 30%;
 }
 
 .book-now {
@@ -91,24 +92,17 @@ html, body {
   border: 2px solid grey;
 }
 
-.body-background {
+footer {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.body-background .container {
-  width: 86%;
-  display: -ms-grid;
-  display: grid;
   background-color: grey;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 7% (1fr)[5] 7%;
+      grid-template-columns: 7% repeat(5, 1fr) 7%;
+  -ms-grid-rows: 47px 47px;
+      grid-template-rows: 47px 47px;
 }
 /*# sourceMappingURL=master.css.map */
