@@ -78,20 +78,6 @@ header nav .block {
   grid-row-end: 4;
 }
 
-html,
-body {
-  width: calc(100%);
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.book-now {
-  text-align: center;
-  border: 2px solid grey;
-}
-
 footer {
   width: 100%;
   display: -ms-grid;
@@ -104,5 +90,19 @@ footer {
       grid-template-columns: 7% repeat(5, 1fr) 7%;
   -ms-grid-rows: 47px 47px;
       grid-template-rows: 47px 47px;
+}
+
+html,
+body {
+  width: calc(100%);
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.book-now {
+  text-align: center;
+  border: 2px solid grey;
 }
 /*# sourceMappingURL=master.css.map */
