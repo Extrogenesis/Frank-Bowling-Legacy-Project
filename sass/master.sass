@@ -13,3 +13,34 @@ body
     text-align: center
     border: 2px solid grey
     
+.body-background
+    width: 100%
+    display: flex
+    justify-content: center
+    .container
+        width: 86%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        background-color: gray
+        padding: 20px
+        .big-block
+            display: grid
+            grid-template-rows: 387px 96px 46px
+            grid-template-columns: 80px 669px
+            overflow: hidden
+            background-color: white
+        .header
+            grid-row-start: 1
+            grid-row-end: 4
+        .image
+            overflow: hidden
+        .small-block
+            display: grid
+            grid-template-rows: 386px 96px 46px
+            grid-template-columns: 80px 387px
+            overflow: hidden
+            background-color: white
+    .bumper
+        width: 100%
+        height: 20px
