@@ -19,28 +19,49 @@ body
     justify-content: center
     .container
         width: 86%
-        display: flex
+        display: grid
         flex-wrap: wrap
         justify-content: space-around
         background-color: gray
-        padding: 20px
+        grid-template-rows: 1fr 1fr
+        grid-template-columns: repeat(5, 1fr)
+        grid-gap: 15px
+        padding: 15px
         .big-block
             display: grid
             grid-template-rows: 387px 96px 46px
-            grid-template-columns: 80px 669px
+            grid-template-columns: 80px 1fr
             overflow: hidden
             background-color: white
+            .image
+                img
+                    width: 100%
+        #first 
+            grid-column: 1 / 4
+        #fourth
+            grid-column: 3 / 6
         .header
             grid-row-start: 1
             grid-row-end: 4
+            p
+                writing-mode: vertical-lr
+                transform: rotate(180deg)
         .image
             overflow: hidden
         .small-block
             display: grid
             grid-template-rows: 386px 96px 46px
-            grid-template-columns: 80px 387px
+            grid-template-columns: 80px 1fr
             overflow: hidden
             background-color: white
+            .image
+                img
+                    width: 100%
+        #second
+            grid-column: 4 / 6
+        #third
+            grid-column: 1 / 3
+
     .bumper
         width: 100%
         height: 20px
