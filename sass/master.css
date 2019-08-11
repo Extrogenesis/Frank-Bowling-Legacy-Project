@@ -87,7 +87,7 @@ footer {
   -ms-flex-pack: center;
   justify-content: center;
   background-color: grey;
-  -ms-grid-columns: 7% (1fr)[5] 7%;
+  -ms-grid-columns: 7% repeat(5 1fr) 7%;
   grid-template-columns: 7% repeat(5, 1fr) 7%;
   -ms-grid-rows: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -125,7 +125,7 @@ footer {
   background-color: gray;
   -ms-grid-rows: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  -ms-grid-columns: (1fr)[5];
+  -ms-grid-columns: 7% repeat(5 1fr) 7%;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 15px;
   padding: 15px;
@@ -220,7 +220,7 @@ footer {
   display: grid;
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
-  -ms-grid-columns: (1fr)[5];
+  -ms-grid-columns: 7% repeat(5 1fr) 7%;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 3px;
   height: 69px;
