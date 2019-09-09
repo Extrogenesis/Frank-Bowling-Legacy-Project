@@ -1,9 +1,13 @@
-.container
+p
+    margin: 0
+    padding: 0
+    
+.sub-nav
     width: 100%
     display: flex
     background-color: grey
     justify-content: center
-    .inner-container
+    .inner-sub-nav
         width: 86%
         display: grid
         grid-template-rows: 1fr
@@ -13,3 +17,33 @@
         padding-right: 8px
         div 
             width: 100%
+.container
+    display: grid
+    grid-template-rows: 335px
+    grid-template-columns: 7% repeat(5,1fr) 7%
+    .image
+        grid-column: 1 / 4
+        display: flex
+        justify-content: center
+        img
+            width: 100%
+    .content
+        grid-column: 4 / 6 
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly  
+    .visit-btn
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: flex-end
+.biography-wrapper
+    display: flex
+    justify-content: center
+    width: 100%
+    .biography
+        width: 86%
+        display: flex
+        justify-content: center
+        p
+            margin: 33.5px 0
