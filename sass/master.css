@@ -315,6 +315,40 @@ p {
   margin: 33.5px 0;
 }
 
+.contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/contact-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-wrapper .contact-container {
+  width: 86%;
+  height: 67%;
+}
+
+.contact-wrapper .contact-container .contact-grid {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  background-color: red;
+}
+
 html,
 body {
   width: calc(100%);
