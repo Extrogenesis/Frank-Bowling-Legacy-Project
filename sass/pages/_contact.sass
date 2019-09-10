@@ -1,14 +1,20 @@
 .contact-wrapper
     display: flex
     justify-content: center
+    align-items: center
     width: 100%
     height: 100vh
     // background-color: red
     background-image: url(../img/contact-bg.jpg)
     background-size: cover
     background-position: center
-    .contact-grid
-        display: grid
+    .contact-container
         width: 86%
-        grid-template-rows: 1fr
-        grid-template-columns: repeat(5,1fr)
+        height: 67%
+        .contact-grid
+            display: grid
+            width: 100%
+            height: 100%
+            grid-template-rows: 1fr
+            grid-template-columns: repeat(5,1fr)
+            background-color: red
