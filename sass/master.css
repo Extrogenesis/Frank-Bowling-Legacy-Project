@@ -234,7 +234,7 @@ p {
   width: 100%;
 }
 
-.container {
+.exhibitions-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 335px;
@@ -243,7 +243,7 @@ p {
       grid-template-columns: 7% repeat(5, 1fr) 7%;
 }
 
-.container .image {
+.exhibitions-container .image {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / 4;
@@ -255,11 +255,11 @@ p {
           justify-content: center;
 }
 
-.container .image img {
+.exhibitions-container .image img {
   width: 100%;
 }
 
-.container .content {
+.exhibitions-container .content {
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-column: 4 / 6;
@@ -275,7 +275,7 @@ p {
           justify-content: space-evenly;
 }
 
-.container .visit-btn {
+.exhibitions-container .visit-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
