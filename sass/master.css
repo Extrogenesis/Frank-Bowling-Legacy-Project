@@ -349,6 +349,36 @@ p {
   background-color: red;
 }
 
+.about-wrapper .about-body-header {
+  height: 425px;
+  background-image: url(../img/about/frank-80s-min.jpg);
+  background-position: left 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-wrapper .about-body-header h1 {
+  color: white;
+}
+
+.about-wrapper .image-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-wrapper .image-wrapper img {
+  width: 100%;
+}
+
 html,
 body {
   width: calc(100%);
