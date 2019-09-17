@@ -379,6 +379,19 @@ p {
   width: 100%;
 }
 
+.work-body-wrapper {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7% (1fr)[5] 7%;
+      grid-template-columns: 7% repeat(5, 1fr) 7%;
+  grid-gap: 3px;
+}
+
+.work-body-wrapper .top-half {
+  height: 671px;
+}
+
 html,
 body {
   width: calc(100%);
