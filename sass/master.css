@@ -388,8 +388,23 @@ p {
   grid-gap: 3px;
 }
 
-.work-body-wrapper .top-half {
+.work-body-wrapper .work-body-container {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 7;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.work-body-wrapper .work-body-container .top-half {
   height: 671px;
+  width: 100%;
 }
 
 html,
