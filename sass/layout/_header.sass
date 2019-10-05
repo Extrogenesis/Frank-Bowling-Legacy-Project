@@ -7,38 +7,42 @@
     
 header
     width: 100%
-    background-color: blue
     display: flex
     justify-content: center
+    background-color: #F5F3F1
     nav
+        width: 86%
         display: grid
-        grid-template-columns: 7% 3fr 1fr 1fr 7%
-        grid-template-rows: 47px 47px
-        grid-gap: 3px
-        width: 100%
-        .brand
-            grid-column-start: 2
-            grid-column-end: 3
-            grid-row-start: 1
-            grid-row-end: 4
-        .block, .brand, .nav-item
-            background-color: pink
-        .exhibitions
-            grid-column-start: 3
-            grid-column-end: 4
-        .work
-            grid-column-start: 4
-            grid-column-end: 5
-        .about
-            grid-column-start: 4
-            grid-column-end: 5
-            grid-row-start: 2
-            grid-row-end: 4
-        .contact
-            grid-column-start: 3
-            grid-column-end: 4
-            grid-row-start: 2
-            grid-row-end: 4
-        .block
-            grid-row-start: 1
-            grid-row-end: 4
+        grid-template: 47px 47px / repeat(5,1fr)
+
+#Brand
+    grid-column-start: 1
+    grid-column-end: 4
+    grid-row-start: 1
+    grid-row-end: 3
+    border-left: 2px solid #383737
+    border-bottom: 2px solid #383737
+    border-right: 2px solid #383737
+    height: 100%
+    display: flex
+    align-items: center
+    padding-left: 28px
+    font-size: 30px
+    h1 
+        font-weight: 100
+        span
+            font-weight: 700
+    
+.nav-item
+    border-bottom: 2px solid #383737
+    border-right: 2px solid #383737
+    height: 100%
+    display: flex
+    align-items: center
+    padding-left: 10px
+    a
+        text-decoration: none
+        &:hover
+            cursor: pointer
+        &:visited
+            color: #383737
