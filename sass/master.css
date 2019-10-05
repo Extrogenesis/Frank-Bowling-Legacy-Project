@@ -98,16 +98,39 @@ header nav {
 
 footer {
   width: 100%;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: grey;
-  -ms-grid-columns: 7% (1fr)[5] 7%;
-      grid-template-columns: 7% repeat(5, 1fr) 7%;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  height: 149px;
+  background-color: #383737;
+  color: #D1CBC6;
+}
+
+.footer-container {
+  width: 86%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  border-left: 2px solid #979797;
+  border-right: 2px solid #979797;
+}
+
+.footer-container div {
+  padding-top: 25px;
+}
+
+.footer-container div p {
+  padding-left: 12px;
+}
+
+.footer-container > div > p + p {
+  margin: 25px 0;
 }
 
 .bumper {
