@@ -223,7 +223,7 @@ a {
   background-color: #F5F3F1;
 }
 
-.body-background .container .big-block .image img {
+.body-background .container .big-block .body-image img {
   width: 100%;
 }
 
@@ -267,7 +267,7 @@ a {
   font-weight: 500;
 }
 
-.body-background .container .image {
+.body-background .container .body-image {
   overflow: hidden;
 }
 
@@ -282,7 +282,7 @@ a {
   background-color: #F5F3F1;
 }
 
-.body-background .container .small-block .image img {
+.body-background .container .small-block .body-image img {
   width: 100%;
 }
 
@@ -302,11 +302,11 @@ a {
   font-weight: 600;
 }
 
-.description, .btn {
+.body-desc, .btn {
   padding: 0 62px;
 }
 
-.image, .description, .btn {
+.body-image, .body-desc, .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
