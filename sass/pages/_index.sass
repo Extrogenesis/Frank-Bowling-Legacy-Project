@@ -2,11 +2,11 @@
 .bumper
     width: 100%
     height: 20px
-    background-color: #383737
+    background-color: $main-color
 
 .book-now
     text-align: center
-    border: 2px solid grey
+    border: 2px solid $main-color
     height: 80px
     display: flex
     align-items: center
@@ -18,21 +18,21 @@
     display: flex
     justify-content: center
     .container
-        width: 86%
+        width: calc( 86% - 40px )
         display: grid
         flex-wrap: wrap
         justify-content: space-around
-        background-color: gray
+        background-color: $main-color
         grid-template-rows: 1fr 1fr
         grid-template-columns: repeat(5, 1fr)
-        grid-gap: 15px
-        padding: 15px
+        grid-gap: 20px
+        padding: 20px
         .big-block
             display: grid
             grid-template-rows: 387px 96px 46px
             grid-template-columns: 80px 1fr
             overflow: hidden
-            background-color: white
+            background-color: $background-color
             .image
                 img
                     width: 100%
@@ -43,17 +43,24 @@
         .header
             grid-row-start: 1
             grid-row-end: 4
-            p
+            display: flex
+            justify-content: center
+            align-items: flex-start
+            position: relative
+            padding-top: 24px
+            h3
                 writing-mode: vertical-lr
                 transform: rotate(180deg)
+                height: 100%
+                text-align: right
         .image
             overflow: hidden
         .small-block
             display: grid
-            grid-template-rows: 386px 96px 46px
+            grid-template-rows: 387px 96px 46px
             grid-template-columns: 80px 1fr
             overflow: hidden
-            background-color: white
+            background-color: $background-color
             .image
                 img
                     width: 100%
@@ -61,3 +68,13 @@
             grid-column: 4 / 6
         #third
             grid-column: 1 / 3
+
+.description,.btn
+    padding: 0 62px
+.image, .description,.btn
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 2px solid $main-color
+    border-top: 0px
+    text-align: center
