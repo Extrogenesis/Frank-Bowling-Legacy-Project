@@ -172,7 +172,8 @@ a {
 
 .book-now {
   text-align: center;
-  border: 2px solid #383737;
+  border-top: 2px solid #383737;
+  border-bottom: 2px solid #383737;
   height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
