@@ -126,7 +126,7 @@ footer {
 }
 
 .footer-container div {
-  padding-top: 25px;
+  padding-top: 12px;
 }
 
 .footer-container div p {
@@ -419,6 +419,20 @@ a {
   padding-left: 12px;
 }
 
+.exhibitions-container .content h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.exhibitions-container .content p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.exhibitions-container .content p, .exhibitions-container .content h2 {
+  color: #4C4845;
+}
+
 .exhibitions-container .visit-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,6 +453,10 @@ a {
   color: #383737;
   font-weight: 500;
   font-size: 30px;
+}
+
+.exhibitions-container .visit-btn p {
+  padding-left: 12px;
 }
 
 .biography-wrapper {
@@ -463,6 +481,12 @@ a {
 
 .biography-wrapper .biography p {
   margin: 33.5px 0;
+}
+
+.biography-wrapper .biography a {
+  color: #383737;
+  padding-left: 8px;
+  text-decoration: underline;
 }
 
 .contact-wrapper {
