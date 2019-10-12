@@ -567,6 +567,11 @@ a {
   width: 100%;
 }
 
+.work-bumper {
+  height: 38px;
+  background-color: #383737;
+}
+
 .work-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -630,5 +635,26 @@ a {
 
 .image-container img {
   height: 628px;
+}
+
+.bottom-half {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 7% (1fr)[5] 7%;
+      grid-template: 1fr/7% repeat(5, 1fr) 7%;
+  height: 576px;
+}
+
+.gallery-container {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=master.css.map */
